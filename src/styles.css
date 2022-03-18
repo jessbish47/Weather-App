@@ -30,7 +30,7 @@ h3 {
     font-family: 'Jost', sans-serif;
 }
 .card {
-    padding: 10px;
+    padding: 3px;
     text-align: center;
 }
 .current-weather {
@@ -92,6 +92,7 @@ h2.city {
     margin: 15px 0;
 }
 
+
 .low-temperature, .high-temperature {
     display: block;
     font-size:25px ;
@@ -99,6 +100,10 @@ h2.city {
     margin: 0;
     text-align: right;
     white-space: nowrap;
+}
+.footnote {
+    padding: 0 0 0 20px;
+    color: #fff;
 }
 #low-temperature{
     color: #4bc87f;
@@ -145,4 +150,7 @@ h2.city {
     display: block;
     text-align: left;
     text-transform: capitalize;
+}
+a:link {
+    color:#4bc87f;
 }
