@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>⛅Weather App</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/f666100208.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="src/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+<body>
+
+
+<div class="container">
+    <div class="row">       
+        <div class="col-6">
+            <div class="card" style="border: none;">
+                <div class="col">
+                    <div class="row">
+                            <span>
+                                <div class="col">
+                                    <form id="search-form">
+                                        <input type="text" 
+                                        placeholder="Enter a city" 
+                                        autocomplete="off" 
+                                        autofocus="on"
+                                        id="search-text-input"
+                                        />
+
+                                        <input type="submit" 
+                                        value="🔍" id="magnifyGlass"/>
+                                    </form>
+                                </div> 
+                            </span>  
+                                <div class="col">
+                                    <button type="button" class="btn btn-outline-secondary" id="getWeatherButton">
+                                        Get My ⛅Weather
+                                    </button>
+                                    </div>
+                                              
+                    </div>
+                        <div class="row">
+                            <div class="col">
+                                <h2 id="chosenCity">
+                                     Brisbane
+                                </h2>
+                                <p id="date">
+                                    Monday 13th July, 2022
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row">
+
+                            <div class="col">
+                                <span class="temperature" id="current-temperature"> 
+                                    
+                                    </span>
+                                    <br>
+                                
+                            </div>     
+                            <div class="col">   
+                                    <h3 id="condition">
+                                        Mostly Cloudy
+                                    </h3>
+                                    <div class="row">
+                                        <div class="col" style="margin: 0 0 0 20;">
+                                            <span id="low-temperature">
+                                                20°
+                                            </span>
+                                            <span id="high-temperature">
+                                                30°
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <p id="FeelsLike">
+                                    Feels like: 28°
+                                    </p>
+                                    <p id="humidity">
+                                        Humidity: 28%
+                                    </p>
+                                    <br />
+                                    
+                                </p>
+                            </div> 
+                        </div>
+                    </div>
+            </div>
+        </div>
+
+
+
+        <div class="col-5">
+            <div class="week">
+            <div class="week-day">
+                <div class="monday">
+                    <div class="card" style="border: none;">
+                            
+                        <div class="row">
+
+                            <div class="col">
+                                <h3 class="day-title">
+                                    M
+                                </h3>
+                            </div>
+                            <div class="col">
+                                <span class="icon">
+                                    <i class="fa-solid fa-cloud-sun"></i>
+                                </span>
+                            </div>
+
+                                <div class="col" id="low-temperature">
+                                        23°C
+                                </div>
+                                <div class="col" id="high-temperature">
+                                            32°C
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+
+            <div class="week-day">
+                <div class="card" style="border: none;">
+                        
+                    <div class="row">
+
+                        <div class="col">
+                            <h3 class="day-title">
+                                T
+                            </h3>
+                        </div>
+                        <div class="col">
+                            <span class="icon">
+                                <i class="fa-solid fa-cloud-sun"></i>
+                            </span>
+                        </div>
+
+                            <div class="col">
+                                <span id="low-temperature">
+                                    23° 
+                                </span>
+                            </div>
+                            <div class="col" id="high-temperature">
+                                        32°
+                            </div>
+                    </div>
+                </div>
+            </div> 
+
+            <div class="week-day">
+                <div class="card" style="border: none;">
+                        
+                    <div class="row">
+
+                        <div class="col">
+                            <h3 class="day-title">
+                                W
+                            </h3>
+                        </div>
+                        <div class="col">
+                            <span class="icon">
+                                <i class="fa-solid fa-cloud-sun"></i>
+                            </span>
+                        </div>
+
+                            <div class="col">
+                                <span class="low-temperature">
+                                    23° 
+                                </span>
+                            </div>
+                            <div class="col">
+                                    <span class="high-temperature">
+                                        32°
+                                    </span>
+                            </div>
+                    </div>
+                </div>
+            </div> 
+
+
+            <div class="week-day">
+                <div class="card" style="border: none;">
+                        
+                    <div class="row">
+
+                        <div class="col">
+                            <h3 class="day-title">
+                                Th
+                            </h3>
+                        </div>
+                        <div class="col">
+                            <span class="icon">
+                                <i class="fa-solid fa-cloud-sun"></i>
+                            </span>
+                        </div>
+
+                            <div class="col">
+                                <span class="low-temperature">
+                                    23° 
+                                </span>
+                            </div>
+                            <div class="col">
+                                    <span class="high-temperature">
+                                        32°
+                                    </span>
+                            </div>
+                    </div>
+                </div>
+            </div> 
+
+            <div class="week-day">
+                <div class="card" style="border: none;" style="padding: 50px;">
+                        
+                    <div class="row">
+
+                        <div class="col">
+                            <h3 class="day-title">
+                                F
+                            </h3>
+                        </div>
+                        <div class="col">
+                            <span class="icon">
+                                <i class="fa-solid fa-cloud-sun"></i>
+                            </span>
+                        </div>
+
+                            <div class="col">
+                                <span class="low-temperature">
+                                    23° 
+                                </span>
+                            </div>
+                            <div class="col">
+                                    <span class="high-temperature">
+                                        32°
+                                    </span>
+                            </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+</div>
+
+<script src="src/apps.js">
+    
+</script>
+    </body>
+    </html>        

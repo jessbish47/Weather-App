@@ -1,0 +1,148 @@
+body {
+    background: #29668b; 
+    }
+        
+    .second-color { 
+        background: #4bc87f; 
+        #f0f87f
+    }
+    
+    .third-color { 
+        background: #29668b; 
+    }
+    
+    .fourth-color { 
+        background: #6eaff7; 
+    }
+}
+input {
+    max-width: 200px;
+    display: block;
+    position: relative;
+}
+h3 {
+    font-size: 20px;
+}
+.container {
+    margin: 200px auto;
+    display: block;
+    align-items: center;
+    font-family: 'Jost', sans-serif;
+}
+.card {
+    padding: 10px;
+    text-align: center;
+}
+.current-weather {
+    margin: 100px auto;
+    padding: 20px;
+
+}
+h2.city {
+    font-size: 25px;
+    color: grey;
+    margin: 0;
+    text-align: left;
+}
+
+.current-temperature {
+    font-size: 150px;
+    font-weight: 800;
+    font-family: 'Corben', cursive;
+    padding: 10px;
+    margin: 20px 20px 50px;
+    text-align: left;
+
+}
+.current-temp-details {
+    display: block;
+    text-align: center;
+    padding: 10px 30px;
+    line-height: 1.5;
+}
+.current-temperature-icon {
+    display: block;
+    font-size: 50px;
+    color:blue;
+    margin: 70px 10px;
+    text-align: center;
+}
+.week-day {
+    position: relative;
+    width: 300px;
+    margin: 15px 20px 0;
+    text-align: center;
+
+}
+.monday {
+    margin: 0px;
+}
+.week {
+    align-items: top;
+}
+
+.day-title {
+    display: block;
+    position: relative;
+    text-align: center;
+    margin: 6px;
+
+}
+.icon {
+    margin: 15px 0;
+}
+
+.low-temperature, .high-temperature {
+    display: block;
+    font-size:25px ;
+    font-weight: 500;
+    margin: 0;
+    text-align: right;
+    white-space: nowrap;
+}
+#low-temperature{
+    color: #4bc87f;
+    margin-right: 10px;
+}
+#high-temperature{
+    color:#29668b;
+    margin-right: 10px;
+}
+
+#date {
+    text-align: left;
+    color: lightgrey;
+}
+#current-temperature {
+    font-size: 100px;
+    text-align: center;
+}
+#units {
+    text-align: center;
+}
+
+#search-form {
+    padding: 5px;
+    margin: 5px;
+
+}
+#search-text-input {
+    border: none;
+    text-align: right;
+    color: lightgray;
+}
+
+#magnifyGlass {
+    max-width: 50px;
+    background: #ffff;
+    border: none;
+}
+#FeelsLike {
+    padding: 0;
+    margin: 0;
+}
+#chosenCity {
+    display: block;
+    text-align: left;
+    text-transform: capitalize;
+}
